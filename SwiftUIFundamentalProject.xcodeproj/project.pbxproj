@@ -11,6 +11,8 @@
 		C0D110172C8813F40054FDC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D110162C8813F40054FDC6 /* ContentView.swift */; };
 		C0D110192C8813F50054FDC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D110182C8813F50054FDC6 /* Assets.xcassets */; };
 		C0D1101C2C8813F50054FDC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0D1101B2C8813F50054FDC6 /* Preview Assets.xcassets */; };
+		C0D110252C8893F90054FDC6 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D110242C8893F90054FDC6 /* Symbols.swift */; };
+		C0D110272C8897040054FDC6 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0D110262C8897040054FDC6 /* Theme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		C0D110162C8813F40054FDC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C0D110182C8813F50054FDC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0D1101B2C8813F50054FDC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C0D110242C8893F90054FDC6 /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		C0D110262C8897040054FDC6 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,9 @@
 		C0D110132C8813F40054FDC6 /* SwiftUIFundamentalProject */ = {
 			isa = PBXGroup;
 			children = (
+				C0D110292C8898CD0054FDC6 /* Features */,
+				C0D110282C8898C40054FDC6 /* Base */,
+				C0D110232C8893B70054FDC6 /* Resources */,
 				C0D110142C8813F40054FDC6 /* SwiftUIFundamentalProjectApp.swift */,
 				C0D110162C8813F40054FDC6 /* ContentView.swift */,
 				C0D110182C8813F50054FDC6 /* Assets.xcassets */,
@@ -65,6 +72,141 @@
 				C0D1101B2C8813F50054FDC6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C0D110232C8893B70054FDC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0D110242C8893F90054FDC6 /* Symbols.swift */,
+				C0D110262C8897040054FDC6 /* Theme.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C0D110282C8898C40054FDC6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		C0D110292C8898CD0054FDC6 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C0D1102D2C88997F0054FDC6 /* Settings */,
+				C0D1102C2C88996E0054FDC6 /* Create */,
+				C0D1102B2C8899660054FDC6 /* Detail */,
+				C0D1102A2C8898D30054FDC6 /* People */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C0D1102A2C8898D30054FDC6 /* People */ = {
+			isa = PBXGroup;
+			children = (
+				C0D110302C8899900054FDC6 /* View Models */,
+				C0D1102F2C88998D0054FDC6 /* Model */,
+				C0D1102E2C8899860054FDC6 /* View */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		C0D1102B2C8899660054FDC6 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				C0D110332C8899A10054FDC6 /* View Models */,
+				C0D110322C88999C0054FDC6 /* Model */,
+				C0D110312C8899980054FDC6 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		C0D1102C2C88996E0054FDC6 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				C0D110362C8899B00054FDC6 /* View Models */,
+				C0D110352C8899AC0054FDC6 /* Model */,
+				C0D110342C8899A70054FDC6 /* View */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		C0D1102D2C88997F0054FDC6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C0D110372C8899B60054FDC6 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		C0D1102E2C8899860054FDC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0D1102F2C88998D0054FDC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0D110302C8899900054FDC6 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C0D110312C8899980054FDC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0D110322C88999C0054FDC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0D110332C8899A10054FDC6 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C0D110342C8899A70054FDC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C0D110352C8899AC0054FDC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C0D110362C8899B00054FDC6 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		C0D110372C8899B60054FDC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D110252C8893F90054FDC6 /* Symbols.swift in Sources */,
+				C0D110272C8897040054FDC6 /* Theme.swift in Sources */,
 				C0D110172C8813F40054FDC6 /* ContentView.swift in Sources */,
 				C0D110152C8813F40054FDC6 /* SwiftUIFundamentalProjectApp.swift in Sources */,
 			);
