@@ -12,10 +12,14 @@ struct ContentView: View {
         VStack {
             Circle().frame(width: 50)
             
+            Spacer()
+            
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, Notion!")
+            
+            Spacer()
             
             Text("Boo Pannachai")
         }
