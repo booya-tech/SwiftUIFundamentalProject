@@ -19,6 +19,8 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, Notion!")
             
+            Spacer()
+            
             Text("Boo Pannachai")
         }
         .padding()
