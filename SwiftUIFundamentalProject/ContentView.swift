@@ -12,6 +12,8 @@ struct ContentView: View {
         VStack {
             Circle().frame(width: 100)
             
+            Spacer()
+            
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
