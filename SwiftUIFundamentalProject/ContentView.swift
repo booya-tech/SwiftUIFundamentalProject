@@ -10,18 +10,17 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Circle().frame(width: 100)
+        }
+        .onAppear() {
+            print("✅ UserResponse")
+            dump (
+                try? StaticJSONMapper.decode(file: "UsersStaticData", type: UsersResponse.self)
+            )
             
-            Spacer()
-            
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, Notion!")
-            
-            Spacer()
-            
-            Text("Boo Pannachai")
+            print("✅ UserDetailsResponse")
+            dump (
+                try? StaticJSONMapper.decode(file: "SingleUserData", type: UserDetailsResponse.self)
+            )
         }
         .padding()
     }
